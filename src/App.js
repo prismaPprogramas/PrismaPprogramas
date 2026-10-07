@@ -1,52 +1,52 @@
-// import { HashRouter, Routes, Route } from 'react-router-dom'
-// import './AppPropia.css'
-// import CustomProvider from './Provider'
-// import Navdar from './MiPagina/Navdar'
-// import Main from './MiPagina/Main'
-// import { useState } from 'react'
-// import Footer from './MiPagina/Footer'
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import './MiPagina/AppPropia.css'
+import CustomProvider from './Provider'
+import Navdar from './MiPagina/Navdar'
+import Main from './MiPagina/Main'
+import { useState } from 'react'
+import Footer from './MiPagina/Footer'
 
-// function App() {
+function App() {
 
-//   const [contactoAbierto, setContactoAbierto] = useState(false)
-//   const [reservaAbierta, setReservaAbierta] = useState(false)
+  const [contactoAbierto, setContactoAbierto] = useState(false)
+  const [reservaAbierta, setReservaAbierta] = useState(false)
 
-//   const abrirContacto = () => {
-//     setContactoAbierto(true)
-//   }
+  const abrirContacto = () => {
+    setContactoAbierto(true)
+  }
 
-//   const abrirReserva = () => {
-//     setReservaAbierta(true)
-//   }
+  const abrirReserva = () => {
+    setReservaAbierta(true)
+  }
 
-//   return (
+  return (
 
-//     <div className="App">
+    <div className="App">
 
-//       <HashRouter>
-//         <Navdar abrirContacto={abrirContacto} abrirReserva={abrirReserva} />
-//         <Routes>
-//           <Route path="/" element={<Main />} />
-//         </Routes>
-//         <Footer />
-//       </HashRouter>
-//     </div>
-//   )
-// }
-// function NewApp() {
+      <HashRouter>
+        <Navdar abrirContacto={abrirContacto} abrirReserva={abrirReserva} />
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
+        <Footer />
+      </HashRouter>
+    </div>
+  )
+}
+function NewApp() {
 
-//   return (
+  return (
 
-//     <CustomProvider>
+    <CustomProvider>
 
-//       <App />
+      <App />
 
-//     </CustomProvider>
+    </CustomProvider>
 
-//   )
+  )
 
-// }
-// export default NewApp
+}
+export default NewApp
 
 
 // import { HashRouter, Routes, Route } from 'react-router-dom'
@@ -402,45 +402,45 @@
 // export default NewApp
 
 
-import { HashRouter, Routes, Route } from 'react-router-dom'
-import './Insumosmah/Insumosmah.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap-icons/font/bootstrap-icons.css'
-import Main from './Insumosmah/Main'
-import Footer from './Insumosmah/Footer'
-import { CarritoProvider } from './CarritoContext'
-import Checkout from './Insumosmah/Checkout'
+// import { HashRouter, Routes, Route } from 'react-router-dom'
+// import './Insumosmah/Insumosmah.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap-icons/font/bootstrap-icons.css'
+// import Main from './Insumosmah/Main'
+// import Footer from './Insumosmah/Footer'
+// import { CarritoProvider } from './CarritoContext'
+// import Checkout from './Insumosmah/Checkout'
 
 
 
-function App() {
+// function App() {
 
-  return (
-    <div className="app">
+//   return (
+//     <div className="app">
 
-      <HashRouter>
+//       <HashRouter>
 
-        <Routes>
+//         <Routes>
 
-          <Route path="/" element={<Main />} />
-          <Route path="/checkout" element={<Checkout />} />
-        </Routes>
-        <Footer />
-      </HashRouter>
+//           <Route path="/" element={<Main />} />
+//           <Route path="/checkout" element={<Checkout />} />
+//         </Routes>
+//         <Footer />
+//       </HashRouter>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
 
-function NewApp() {
+// function NewApp() {
 
-  return (
-    <CarritoProvider>
-      <App />
-    </CarritoProvider>
-  )
+//   return (
+//     <CarritoProvider>
+//       <App />
+//     </CarritoProvider>
+//   )
 
-}
+// }
 
-export default NewApp
+// export default NewApp
